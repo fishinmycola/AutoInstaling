@@ -51,4 +51,4 @@ AutoInstaling is a Node.js application that automates completing language learni
 You can start the program by executing `start.bat` on Windows or running the following command:
 
 ```bash
-node nodebot.js
+node AutoInstaling.js
