@@ -1,2 +1,2 @@
 echo off
-node nodebot.js
+node AutoInstaling.js

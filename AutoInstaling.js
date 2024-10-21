@@ -31,6 +31,7 @@ function readWordsFile() {
         }
     });
 
+
     return { slArray, odArray, exArray };
 }
 
@@ -100,7 +101,7 @@ async function sessionMaker(login, password, runInBrowser, i) {
     
             // Click check and handle any errors that may arise
             try {
-                await page.click('#check');
+                await page.click('#check_answer');
             } catch (err) {
                
                 try {
@@ -126,7 +127,7 @@ async function sessionMaker(login, password, runInBrowser, i) {
                 
                 await new Promise(resolve => setTimeout(resolve, 1500));
                 try {
-                    await page.click('#check');
+                    await page.click('#check_answer');
                 } catch (checkErr) {
                     
                 }
@@ -140,7 +141,7 @@ async function sessionMaker(login, password, runInBrowser, i) {
     
         // Outer catch block to handle session-level failures
         try {
-            await page.click('#check');
+            await page.click('#check_answer');
         } catch (finalErr) {
             
             try {
